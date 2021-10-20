@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     public float speed;
     public Text scoreText;
     private int score = 0;
+    public AudioClip Point;
+    public AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,8 +49,15 @@ public class Player : MonoBehaviour
         {
             score++;
             scoreText.text = "SCORE: " + score;
-            // audioSource.PlayOneShot(Point);
-             //CheckScore();
+            audioSource.PlayOneShot(Point);
+            CheckScore();
+        }
+    }
+    public void CheckScore()
+    {
+        if (score >= 10)
+        {
+            SceneManager.LoadScene("WinScene");
         }
     }
 }
