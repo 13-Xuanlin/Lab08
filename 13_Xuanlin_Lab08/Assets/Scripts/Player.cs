@@ -12,8 +12,9 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        scoreText.text = "SCORE: " + score;
     }
+
 
     // Update is called once per frame
     void Update()
@@ -46,8 +47,8 @@ public class Player : MonoBehaviour
         {
             score++;
             scoreText.text = "SCORE: " + score;
-            /* audioSource.PlayOneShot(Point);
-             CheckScore();*/
+            // audioSource.PlayOneShot(Point);
+             //CheckScore();
         }
     }
 }
