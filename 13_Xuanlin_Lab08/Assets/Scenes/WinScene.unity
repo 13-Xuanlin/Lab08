@@ -276,13 +276,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 60
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You Lose!
+  m_Text: You Win!
 --- !u!222 &859747463
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -722,7 +722,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d4becb9876712bf45bdb7ea702f38074, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0078d0d33455ec44b82df5b546f79c42, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
